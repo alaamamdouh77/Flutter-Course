@@ -2,7 +2,6 @@
 // 09 — Variables Part 2 | Tasks
 // ============================================
 
-import 'dart:ffi';
 
 void main() {
   // Task 1:

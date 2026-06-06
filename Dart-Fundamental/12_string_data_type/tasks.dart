@@ -2,6 +2,7 @@
 // 12 — String Data Type | Tasks
 // ============================================
 
+
 void main() {
   // Task 1:
   // Build a full name formatter:
@@ -9,6 +10,9 @@ void main() {
   // Output: "Ahmed Mohamed" (capitalize first letters, rest lowercase)
   // Use String methods!
   // YOUR CODE HERE:
+  // print("Enter your name: ");
+  // String? name = stdin.readLineSync();
+  // print("Hello $name");
 
 
   // Task 2:
@@ -20,6 +24,12 @@ void main() {
   // - Contains "!"?
   // - Starts with a letter?
   // YOUR CODE HERE:
+  String password = "dart2024!";
+
+  print(password.length >= 8);
+  print(password.contains("2024"));
+  print(password.contains("!"));
+  print(password.startsWith("d"));
 
 
   // Task 3:
@@ -31,6 +41,12 @@ void main() {
   // Then print the card and its length.
   // YOUR CODE HERE:
 
+  String card = "Name: Alaa Mamdouh \n Address: Ismailia \n City: Ismailia \n Country: Egypt";
+
+  print(card);
+  print("Length: ${card.length}");
+
+
 
   // Task 4:
   // String Parsing:
@@ -38,5 +54,13 @@ void main() {
   // Convert them to numbers, calculate the average, and print:
   // "Average score: [result]"
   // YOUR CODE HERE:
-
+  String num1="95";
+  String num2="87.5";
+  String num3="100";
+  
+  int n1=int.parse(num1);
+  double n2= double.parse(num2);
+  int n3= int.parse(num3);
+  double average = (n1 + n2 + n3) / 3;
+  print("Average score: $average");
 }
